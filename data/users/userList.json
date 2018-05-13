@@ -1,0 +1,184 @@
+{
+    "katrimble":{
+        "user_name":"katrimble",
+        "user_id":1,
+        "name":"Kathryn Trimble",
+        "family_level":1,
+        "user_type":"USER"
+    },
+    "rotrimble":{
+        "user_name":"rotrimble",
+        "user_id":2,
+        "name":"Robert Trimble",
+        "family_level":1,
+        "user_type":"USER"
+    },
+    "mahill":{
+        "user_name":"mahill",
+        "user_id":3,
+        "name":"Mary Hill",
+        "family_level":1,
+        "user_type":"USER"
+    },
+    "jimtrimble":{
+        "user_name":"jimtrimble",
+        "user_id":4,
+        "name":"Jim Trimble",
+        "family_level":1,
+        "user_type":"USER"
+    },
+    "sumccormick":{
+        "user_name":"sumccormick",
+        "user_id":4,
+        "name":"Susan McCormick",
+        "family_level":1,
+        "user_type":"USER"
+    },
+    "tomtrimble":{
+        "user_name":"tomtrimble",
+        "user_id":6,
+        "name":"Tom Trimble",
+        "family_level":1,
+        "user_type":"USER"
+    },
+    "narobbins":{
+        "user_name":"narobbins",
+        "user_id":7,
+        "name":"Nancy Robbins",
+        "family_level":1,
+        "user_type":"USER"
+    },
+    "johntrimble":{
+        "user_name":"johntrimble",
+        "user_id":8,
+        "name":"John Trimble",
+        "family_level":1,
+        "user_type":"ADMIN"
+    },
+    "shtrimble":{
+        "user_name":"shtrimble",
+        "user_id":9,
+        "name":"Shirley Trimble",
+        "family_level":1,
+        "user_type":"USER"
+    },
+    "zadugger":{
+        "user_name":"zadugger",
+        "user_id":10,
+        "name":"Zac Dugger",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "milightner":{
+        "user_name":"milightner",
+        "user_id":11,
+        "name":"Mike Lightner",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "jolightner":{
+        "user_name":"jolightner",
+        "user_id":12,
+        "name":"Joe Lightner",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "calightner":{
+        "user_name":"calightner",
+        "user_id":13,
+        "name":"Casey Lightner",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "alliscinsky":{
+        "user_name":"alliscinsky",
+        "user_id":14,
+        "name":"Alli Liscinsky",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "jestrimble":{
+        "user_name":"jestrimble",
+        "user_id":15,
+        "name":"Jess Trimble",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "grtrimble":{
+        "user_name":"grtrimble",
+        "user_id":16,
+        "name":"Greg Trimble",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "chtrimble":{
+        "user_name":"chtrimble",
+        "user_id":17,
+        "name":"Chelsea Trimble",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "flbarth":{
+        "user_name":"flbarth",
+        "user_id":18,
+        "name":"Florence Barth",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "ermccormick":{
+        "user_name":"ermccormick",
+        "user_id":19,
+        "name":"Eric McCormick",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "jmcross":{
+        "user_name":"jmcross",
+        "user_id":20,
+        "name":"John Michael Cross",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "jocross":{
+        "user_name":"jocross",
+        "user_id":21,
+        "name":"Josh Cross",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "benrobbins":{
+        "user_name":"benrobbins",
+        "user_id":22,
+        "name":"Ben Robbins",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "samrobbins":{
+        "user_name":"samrobbins",
+        "user_id":23,
+        "name":"Sam Robbins",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "jaketrimble":{
+        "user_name":"jaketrimble",
+        "user_id":24,
+        "name":"Jake Trimble",
+        "family_level":2,
+        "user_type":"ADMIN"
+    },
+    "natrimble":{
+        "user_name":"natrimble",
+        "user_id":25,
+        "name":"Nathan Trimble",
+        "family_level":2,
+        "user_type":"USER"
+    },
+    "oltrimble":{
+        "user_name":"oltrimble",
+        "user_id":26,
+        "name":"Olivia Trimble",
+        "family_level":2,
+        "user_type":"USER"
+    }
+}

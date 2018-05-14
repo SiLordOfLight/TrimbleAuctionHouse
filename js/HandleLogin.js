@@ -5,7 +5,11 @@ function handleLogin(){
     var ulst = getUserList();
     var user;
 
+<<<<<<< HEAD
     if (! typeof(ulst) == 'undefined'){
+=======
+    if (! typeof(ulst[unm]) == 'undefined'){
+>>>>>>> dda48dbc958fcf09c8f3a3c09e05bafc718d8aa5
         user = ulst[unm];
     }else {
         user = "ERROR";

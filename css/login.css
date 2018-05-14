@@ -1,0 +1,45 @@
+html {
+    background-color: rgb(56, 113, 65);
+    background-image: url("../data/images/homepage.jpg");
+}
+
+.loginBox {
+    background-color: rgba(104, 161, 88, 0.78);
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 25%;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.loginBox #txtFldA {
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.loginBox #txtFldB {
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.loginBox button#sbmtBtn {
+    background-color: rgba(71, 172, 163, 0.83);
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 200px;
+    font-size: 50px;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    justify-content: center;
+    display: flex;
+    margin-top: 1%;
+}
+
+.loginBox button#sbmtBtn:active {
+    background-color: rgba(104, 161, 88, 1);
+}

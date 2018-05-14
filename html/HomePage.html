@@ -6,12 +6,19 @@
 
         <link rel="stylesheet" href="../css/home.css">
         <script src="../js/LoadPage.js" charset="utf-8"></script>
+        <script src="../js/ButtonConfigure.js" charset="utf-8"></script>
 
     </head>
 
     <body>
-        <h1>Welcome to the Trimble Auction House!</h1>
+        <div class="TitleBar">
+            <h1 class="pageTitle">Welcome to the Trimble Auction House!</h1>
+        </div>
 
-        <button onclick="loadPage("Login")">Login</button>
+        <div class="loginButton">
+            <button id="loginB">Login</button>
+            <script>configBtn("loginB",function(){loadPage("Login")})</script>
+        </div>
+
     </body>
 </html>

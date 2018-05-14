@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+
+        <link rel="stylesheet" href="../css/login.css">
+
+        <script src="../js/LoadPage.js" charset="utf-8"></script>
+        <script src="../js/ButtonConfigure.js" charset="utf-8"></script>
+        <script src="../js/HandleLogin.js" charset="utf-8"></script>
+        <script src="../js/jquery.js"></script>
+    </head>
+    <body>
+        <div class="loginBox">
+            <input id="txtFldA" type="text" name="Username" value="Username"><br>
+            <input id="txtFldB" type="text" name="User ID" value="User ID"><br>
+            <button type="button" id="sbmtBtn">Log In</button>
+            <script>configBtn("sbmtBtn",function(){handleLogin();});</script>
+        </div>
+    </body>
+</html>

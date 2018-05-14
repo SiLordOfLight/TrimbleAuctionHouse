@@ -5,7 +5,7 @@ function loadPage(pageName) {
 
   locPieces.pop();
 
-  locPieces.push("html/"+pageName+".html");
+  locPieces.push(pageName+".html");
 
   newPath = locPieces.join("/");
 

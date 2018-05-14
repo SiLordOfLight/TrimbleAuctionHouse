@@ -3,13 +3,18 @@ function handleLogin(){
     var uid = document.getElementById('txtFldB').value;
 
     var ulst = getUserList();
+    var user;
 
-    var user = ulst[unm];
+    if (! typeof(ulst[unm]) == 'undefined'){
+        user = ulst[unm];
+    }else {
+        user = "ERROR";
+    }
 
-    if (user != null && user.user_id == parseInt(uid)) {
+    if (user != "ERROR" && user.user_id == parseInt(uid)) {
         loadPage("HomePage_LoggedIn");
         sessionStorage.setItem("user",JSON.stringify(user));
-    } else if (user == null) {
+    } else if (user == "ERROR") {
         document.getElementById('txtFldA').value = "Invalid Username";
     } else if (user.user_id != parseInt(uid)) {
         document.getElementById('txtFldB').value = "Invalid User ID";

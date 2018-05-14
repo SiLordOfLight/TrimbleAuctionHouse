@@ -24,7 +24,7 @@ function handleLogin(){
 }
 
 function getUserList() {
-    var retVal;
+    var retVal = "Fish";
 
     $.ajax({
       url : "../data/users/userList.json",

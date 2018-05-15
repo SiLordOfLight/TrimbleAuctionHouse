@@ -24,12 +24,22 @@ function handleLogin(){
 }
 
 function getUserList() {
+    var locPieces, jsonLoc;
+    locPieces = document.location.href.split('/');
+    locPieces.pop();
+    locPieces.push("../data/users/userList.json");
+    jsonLoc = locPieces.join("/");
+
+    var request = new XMLHttpRequest();
+    request.open('GET', jsonLoc);
+    request.responseType = 'json';
+    request.send();
+
     var retVal = "Fish";
 
-    $.getJSON("../data/users/userList.json",function(json){
-        retVal = json;
-        console.log(json);
-    });
+    request.onload = function() {
+      retVal = request.response;
+    }
 
     return retVal;
 }

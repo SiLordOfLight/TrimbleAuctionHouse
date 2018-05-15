@@ -4,6 +4,7 @@ function handleLogin(ulst){
 
     var user;
 
+    console.log(ulst);
     var userList = JSON.parse(ulst);
 
     user = userList[unm];

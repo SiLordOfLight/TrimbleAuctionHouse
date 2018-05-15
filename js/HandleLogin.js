@@ -4,16 +4,14 @@ function handleLogin(ulst){
 
     var user;
 
-    if (! typeof(ulst) == 'undefined'){
-        user = ulst[unm];
-    }else {
-        user = "ERROR";
-    }
+    var userList = JSON.parse(ulst);
 
-    if (user != "ERROR" && user.user_id == parseInt(uid)) {
+    user = userList[unm];
+
+    if (typeof(user) != 'undefined' && user.user_id == parseInt(uid)) {
         loadPage("HomePage_LoggedIn");
         sessionStorage.setItem("user",JSON.stringify(user));
-    } else if (user == "ERROR") {
+    } else if (typeof(user) == 'undefined') {
         document.getElementById('txtFldA').value = "Invalid Username";
     } else if (user.user_id != parseInt(uid)) {
         document.getElementById('txtFldB').value = "Invalid User ID";

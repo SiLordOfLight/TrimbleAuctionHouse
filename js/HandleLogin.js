@@ -1,13 +1,12 @@
-function handleLogin(ulst){
+function handleLogin(){
     var unm = document.getElementById('txtFldA').value;
     var uid = document.getElementById('txtFldB').value;
 
     var user;
 
-    console.log(ulst);
-    var userList = JSON.parse(ulst);
+    var ulst = getUserList();
 
-    user = userList[unm];
+    user = ulst[unm];
 
     if (typeof(user) != 'undefined' && user.user_id == parseInt(uid)) {
         loadPage("HomePage_LoggedIn");
@@ -33,10 +32,8 @@ function getUserList() {
     request.responseType = 'json';
     request.send();
 
-    var retVal = "Fish";
+    return request.response;
 
-    request.onload = function() {
-      handleLogin(JSON.stringify(request.response));
-    }
+
 }
 

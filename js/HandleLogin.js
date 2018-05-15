@@ -1,12 +1,10 @@
-function handleLogin(){
+function handleLogin(ulst){
     var unm = document.getElementById('txtFldA').value;
     var uid = document.getElementById('txtFldB').value;
 
-    var ulst = getUserList();
     var user;
 
-
-    if (! typeof(ulst) == 'undefined'){
+    if (! typeof(ulst[unm]) == 'undefined'){
         user = ulst[unm];
     }else {
         user = "ERROR";
@@ -27,7 +25,8 @@ function getUserList() {
     var locPieces, jsonLoc;
     locPieces = document.location.href.split('/');
     locPieces.pop();
-    locPieces.push("../data/users/userList.json");
+    locPieces.pop();
+    locPieces.push("data/users/userList.json");
     jsonLoc = locPieces.join("/");
 
     var request = new XMLHttpRequest();
@@ -38,9 +37,7 @@ function getUserList() {
     var retVal = "Fish";
 
     request.onload = function() {
-      retVal = request.response;
+      handleLogin(request.response);
     }
-
-    return retVal;
 }
 

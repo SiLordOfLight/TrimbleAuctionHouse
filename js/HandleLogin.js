@@ -1,4 +1,4 @@
-function handleLogin(){
+function handleLoginCont(ulst){
     var unm = document.getElementById('txtFldA').value;
     var uid = document.getElementById('txtFldB').value;
 
@@ -38,8 +38,14 @@ function getUserList() {
     request.responseType = 'json';
     request.send();
 
-    return request.response;
+    request.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            handleLoginCont(this.response);
+        }
+    }
+}
 
-
+function handleLogin(){
+    getUserList();
 }
 

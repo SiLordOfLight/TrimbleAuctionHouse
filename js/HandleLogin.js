@@ -4,7 +4,7 @@ function handleLogin(ulst){
 
     var user;
 
-    if (! typeof(ulst[unm]) == 'undefined'){
+    if (! typeof(ulst) == 'undefined'){
         user = ulst[unm];
     }else {
         user = "ERROR";

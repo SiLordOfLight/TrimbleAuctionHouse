@@ -12,6 +12,7 @@ function handleLogin(){
         user = "ERROR";
     }
 
+    //Test theory
 
     if (user != "ERROR" && user.user_id == parseInt(uid)) {
         loadPage("HomePage_LoggedIn");

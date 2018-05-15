@@ -6,12 +6,17 @@ function handleLogin(){
 
     var ulst = getUserList();
 
-    user = ulst[unm];
+    if (ulst[unm] != null){
+        user = ulst[unm];
+    }else {
+        user = "ERROR";
+    }
 
-    if (typeof(user) != 'undefined' && user.user_id == parseInt(uid)) {
+
+    if (user != "ERROR" && user.user_id == parseInt(uid)) {
         loadPage("HomePage_LoggedIn");
         sessionStorage.setItem("user",JSON.stringify(user));
-    } else if (typeof(user) == 'undefined') {
+    } else if (user == "ERROR") {
         document.getElementById('txtFldA').value = "Invalid Username";
     } else if (user.user_id != parseInt(uid)) {
         document.getElementById('txtFldB').value = "Invalid User ID";

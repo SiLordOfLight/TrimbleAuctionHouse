@@ -35,7 +35,7 @@ function getUserList() {
     var retVal = "Fish";
 
     request.onload = function() {
-      handleLogin(request.response);
+      handleLogin(JSON.stringify(request.response));
     }
 }
 

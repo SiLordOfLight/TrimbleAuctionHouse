@@ -4,8 +4,6 @@ function handleLoginCont(ulst){
 
     var user;
 
-    var ulst = getUserList();
-
     if (ulst.hasOwnProperty(unm)){
         user = ulst[unm];
     }else {

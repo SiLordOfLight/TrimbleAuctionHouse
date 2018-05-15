@@ -6,7 +6,7 @@ function handleLogin(){
 
     var ulst = getUserList();
 
-    if (ulst[unm] != null){
+    if (ulst.hasOwnProperty(unm)){
         user = ulst[unm];
     }else {
         user = "ERROR";

@@ -1,21 +1,23 @@
-html {
+html, body {
     background-color: rgb(56, 113, 65);
     background-image: url("../data/images/homepage.jpg");
 }
 
-.TitleBar {
-    background-color: rgba(83, 148, 91, 0.62);
-    border-radius: 10px;
-    margin-top: 10px;
-    max-width: 700px;
-    margin: auto;
-    display: inline-flex;
-    float: none;
-}
-.TitleBar h1 {
-    text-align: center;
+.col-lg-4 #blank {
+    visibility: hidden;
 }
 
+.col-lg-4#title h1 {
+    text-align: center;
+    background-color: rgba(67, 135, 78, 0.6);
+    border-radius: 10px;
+}
+
+.col-lg-4#userBubble h1 {
+    text-align: right;
+    background-color: rgba(67, 135, 78, 0.6);
+    border-radius: 10px;
+}
 
 .loginButton button {
     margin: auto;
@@ -35,18 +37,4 @@ html {
     color: #8b8b8b;
 }
 
-
-.UserBubble {
-    background-color: rgba(83, 148, 91, 0.62);
-    border-radius: 10px;
-    margin-top: 10px;
-    justify-content: center;
-    display: inline-flex;
-    /* float: right; */
-    max-width: 200px;
-    margin:auto;
-}
-.UserBubble h1 {
-    text-align: center;
-}
 

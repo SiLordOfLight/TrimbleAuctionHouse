@@ -84,7 +84,7 @@ function fetchItemData(){
     var session = ScrollSession.read(sessionStorage.scrollSession)
 
     var request = new XMLHttpRequest();
-    request.open('GET', dataLoc+session.category+"item-"+session.current_index);
+    request.open('GET', dataLoc+session.category+"/item-"+session.current_index);
     request.responseType = 'json';
     request.send();
 

@@ -19,7 +19,7 @@ class ScrollSession {
     constructor(category,catData) {
         this.category = category;
         this.current_index = 1;
-        this.max_index = catData![category].item_count;
+        this.max_index = catData;
         this.current_image = imagesLoc+category+"_"+1;
     }
 
@@ -57,7 +57,7 @@ function init(category) {
 
     request.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            beginScrollSession(category,request.response)
+            beginScrollSession(category,request.response[category].item_count)
         }
     }
 }

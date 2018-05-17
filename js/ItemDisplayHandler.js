@@ -35,7 +35,7 @@ class ScrollSession {
 
     save(){
         var myData = {"category":this.category, "current_index":this.current_index, "max_index":this.max_index, "current_image":this.current_image};
-        sessionStorage.write('scrollSession',JSON.stringify(myData));
+        sessionStorage.setItem('scrollSession',JSON.stringify(myData));
     }
 
     static read(){

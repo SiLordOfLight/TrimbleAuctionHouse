@@ -2,16 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Trimble Auction House</title>
+        <title>Paintings</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/home_li.css">
+        <link rel="stylesheet" href="../css/itemLists.css">
         <link rel="stylesheet" href="../css/titleNav.css">
 
         <script src="../js/GetUser.js" charset="utf-8"></script>
+        <script src="../js/ItemDisplayHandler.js" charset="utf-8"></script>
+
+        <script>beginScrollSession("artwork/paintings");</script>
     </head>
     <body>
-
         <div class="row" id="titleBar">
             <div class="col-lg-3 barItem" id="blank"></div>
 
@@ -39,7 +41,7 @@
             <a class="navBarItem dropdownLnk" id="cat1" href="#">Artwork</a>
 
             <div class="dropdown-content" id="cat1-cont" style="margin-left: 1%">
-                <a class="navBarDropItem" href="artwork-paintings.html">Paintings</a>
+                <a class="navBarDropItem active-item" href="artwork-paintings.html">Paintings</a>
                 <a class="navBarDropItem" href="artwork-needlepoint.html">Needlepoint</a>
                 <a class="navBarDropItem" href="artwork-textiles.html">Textiles</a>
                 <a class="navBarDropItem" href="artwork-ceramics.html">Ceramics</a>
@@ -68,5 +70,30 @@
         </div>
         <script src="../js/SetupNav.js"></script>
 
+        <div class="itemContent">
+            <div class="row">
+                <div class="col-lg-3 bubbleFrame">
+                    <div class="contentBubble dataBubble">
+                        <p id="dataBox"></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 bubbleFrame">
+                    <div class="contentBubble imgBubble">
+                        <img id="imgBox" src="" alt="File Not Found">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 bubbleFrame">
+                    <div class="contentBubble blogBubble">
+
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                fetchItemData();
+            </script>
+        </div>
     </body>
 </html>

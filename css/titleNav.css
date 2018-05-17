@@ -26,12 +26,14 @@
     position: absolute;
     width: 100%;
     border-top: 2px solid black;
+    /* overflow: hidden; */
+    max-height: 55px;
 }
 
 .navBarItem {
     white-space: normal;
     float: right;
-    width: 16%;
+    width: 11%;
     border: none;
     display: block;
     outline: 0;
@@ -39,14 +41,20 @@
     color: black;
     font-size: 24px;
     text-align: center;
+    overflow-x: hidden;
+    white-space: nowrap;
 }
 
 .logo-item {
-    width: 4%;
+    width: 1%;
 }
 
-.active-item {
+.navBarItem .active-item {
     background-color: rgba(67, 135, 78, 0.9);
+}
+
+.navBarDropItem .active-item {
+    background-color: #eac784;
 }
 
 .navBar a:hover {
@@ -54,3 +62,26 @@
     color: black;
     text-decoration: none;
 }
+
+.navBar .dropdown-content {
+    display: none;
+    position: relative;
+    margin-top: 53px;;
+    background-color: #362415;
+    width: 11%;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 8000;
+
+}
+
+.navBar .dropdown-content a {
+  color: #15a23c;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.navBar .dropdown-content a:hover {background-color: #eac784}

@@ -38,8 +38,8 @@ class ScrollSession {
         sessionStorage.setItem('scrollSession',JSON.stringify(myData));
     }
 
-    static read(){
-        var obj = JSON.parse(sessionStorage.scrollSession);
+    static read(src){
+        var obj = JSON.parse(src);
         var ret = new ScrollSession(obj.category);
         ret.current_index = obj.current_index;
         ret.max_index = obj.max_index;
@@ -68,7 +68,7 @@ function beginScrollSession(category,catData) {
 }
 
 function next() {
-    var session = ScrollSession.read();
+    var session = ScrollSession.read(sessionStorage.scrollSession);
 
     session.next();
 
@@ -81,7 +81,7 @@ function setupPage(data,imgid) {
 }
 
 function fetchItemData(){
-    var session = ScrollSession.read()
+    var session = ScrollSession.read(sessionStorage.scrollSession)
 
     var request = new XMLHttpRequest();
     request.open('GET', dataLoc+session.category+"item-"+session.current_index);

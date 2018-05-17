@@ -13,21 +13,10 @@ locPieces.pop();
 locPieces.push("data/items/");
 var dataLoc = locPieces.join("/");
 
-var request = new XMLHttpRequest();
-request.open('GET', dataLoc+"categorySummary.json");
-request.responseType = 'json';
-request.send();
 
-var catData;
-
-request.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        catData = request.response;
-    }
-}
 
 class ScrollSession {
-    constructor(category) {
+    constructor(category,catData) {
         this.category = category;
         this.current_index = 1;
         this.max_index = catData[category].item_count;
@@ -60,8 +49,21 @@ class ScrollSession {
     }
 }
 
-function beginScrollSession(category) {
-    var session = new ScrollSession(category);
+function init(category) {
+    var request = new XMLHttpRequest();
+    request.open('GET', dataLoc+"categorySummary.json");
+    request.responseType = 'json';
+    request.send();
+
+    request.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            beginScrollSession(category,request.response)
+        }
+    }
+}
+
+function beginScrollSession(category,catData) {
+    var session = new ScrollSession(category,catData);
     session.save();
 }
 

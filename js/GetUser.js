@@ -7,5 +7,5 @@ function cheat(){
 }
 
 function configUserBubble(){
-    document.getElementById('userName').innerHTML = user().name;
+    document.getElementById('userName').innerHTML = cheat().name;
 }

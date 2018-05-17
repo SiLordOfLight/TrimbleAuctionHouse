@@ -1,0 +1,25 @@
+html, body {
+    background-color: rgb(56, 113, 65);
+    background-image: url("../data/images/bg_img_2.jpg");
+    background-size: cover;
+}
+
+.itemContent .bubbleFrame {
+    margin-top: 8%;
+    height: 500px;
+}
+
+.itemContent .contentBubble  {
+    background-color: rgba(215, 215, 215, 0.8);
+    text-align: center;
+    height: 100%;
+    padding-top: 1px;
+    border-radius: 10px;
+}
+
+.contentBubble.dataBubble {
+    margin-left: 15px;
+}
+.contentBubble.blogBubble {
+    margin-right: 15px;
+}

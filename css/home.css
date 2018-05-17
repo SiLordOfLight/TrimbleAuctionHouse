@@ -3,18 +3,12 @@ html, body {
     background-image: url("../data/images/homepage.jpg");
 }
 
-.col-lg-4 #blank {
+.col-lg-3 #blank {
     visibility: hidden;
 }
 
-.col-lg-4#title h1 {
+.col-lg-6#title h1 {
     text-align: center;
-    background-color: rgba(67, 135, 78, 0.6);
-    border-radius: 10px;
-}
-
-.col-lg-4#userBubble h1 {
-    text-align: right;
     background-color: rgba(67, 135, 78, 0.6);
     border-radius: 10px;
 }

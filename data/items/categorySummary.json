@@ -1,0 +1,20 @@
+{
+    "artwork/paintings" : {
+        "item_count": 1
+    },
+    "artwork/ceramics" : {
+        "item_count": 0
+    },
+    "artwork/needlepoint" : {
+        "item_count": 0
+    },
+    "artwork/textiles" : {
+        "item_count": 0
+    },
+    "artwork/woodwork" : {
+        "item_count": 0
+    },
+    "artwork/other" : {
+        "item_count": 0
+    }
+}

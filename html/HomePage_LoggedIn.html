@@ -5,25 +5,36 @@
         <title>Trimble Auction House</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/home_li.css">
+        <link rel="stylesheet" href="../css/titleNav.css">
 
         <script src="../js/GetUser.js" charset="utf-8"></script>
     </head>
     <body>
 
         <div class="row" id="titleBar">
-            <div class="col-lg-4" id="blank"></div>
+            <div class="col-lg-3 barItem" id="blank"></div>
 
-            <div class="col-lg-4" id="title">
-                <h1>Welcome to the Trimble Auction House!</h1>
+            <div class="col-lg-6 barItem" id="title">
+                <h1>The Trimble Auction House</h1>
             </div>
 
-            <span class="col-lg-4" id="userBubble">
+            <div class="col-lg-3 barItem" id="userBubble">
                 <h1 id="userName"></h1>
                 <script type="text/javascript">
                     configUserBubble();
                 </script>
-            </span>
+            </div>
+        </div>
+
+        <div class="navBar">
+            <a class="navBarItem" href="itemLists/paintings.html">Other</a>
+            <a class="navBarItem" href="itemLists/paintings.html">Woodwork</a>
+            <a class="navBarItem" href="itemLists/paintings.html">Ceramics</a>
+            <a class="navBarItem" href="itemLists/paintings.html">Textiles</a>
+            <a class="navBarItem" href="itemLists/paintings.html">Needlepoint</a>
+            <a class="navBarItem" href="itemLists/paintings.html">Paintings</a>
+            <a class="navBarItem logo-item active-item" href="itemLists/paintings.html">⌂</a>
         </div>
 
     </body>

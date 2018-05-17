@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../css/titleNav.css">
 
         <script src="../js/GetUser.js" charset="utf-8"></script>
+        <script src="../js/ButtonConfigure.js" charset="utf-8"></script>
         <script src="../js/ItemDisplayHandler.js" charset="utf-8"></script>
 
         <script>init("artwork/paintings");</script>
@@ -74,19 +75,33 @@
             <div class="row">
                 <div class="col-lg-3 bubbleFrame">
                     <div class="contentBubble dataBubble">
-                        <p id="dataBox"></p>
+                        <p id="dataBox">Item #111 <br>Random Painting <br>Artist: Dorothy Trimble</p>
+
+                        <div class="btn-group itemNav">
+                            <button type="button" class="btn btn-primary" id="back"><<<</button>
+                            <button type="button" class="btn btn-primary" id="fwd">>>></button>
+
+                            <script type="text/javascript">
+                                configBtn('back',function(){sessionBack();});
+                                configBtn('fwd',function(){sessionNext();});
+                            </script>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 bubbleFrame">
                     <div class="contentBubble imgBubble">
-                        <img id="imgBox" src="" alt="File Not Found">
+                        <img id="imgBox" src="../data/images/bg_img_1.jpg" alt="File Not Found">
                     </div>
                 </div>
 
                 <div class="col-lg-3 bubbleFrame">
                     <div class="contentBubble blogBubble">
-
+                        <h1>Make A Claim:</h1><br>
+                        <h3>Comments:</h3>
+                        <textarea id="inpFld" name="Comments"></textarea><br><br>
+                        <button type="button" id="sbmtBtn">Make Claim</button>
+                        <script>configBtn("sbmtBtn",function(){handleLogin();});</script>
                     </div>
                 </div>
             </div>

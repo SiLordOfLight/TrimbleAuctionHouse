@@ -32,6 +32,15 @@ class ScrollSession {
             this.current_image = this.current_image.substring(0, this.current_image.length-1) + 1;
         }
     }
+    prev(){
+        if (this.current_index >= 0) {
+            this.current_index -= 1;
+            this.current_image = this.current_image.substring(0, this.current_image.length-1) + this.current_index;
+        } else {
+            this.current_index = this.max_index;
+            this.current_image = this.current_image.substring(0, this.current_image.length-1) + 1;
+        }
+    }
 
     save(){
         var myData = {"category":this.category, "current_index":this.current_index, "max_index":this.max_index, "current_image":this.current_image};
@@ -67,10 +76,18 @@ function beginScrollSession(category,catData) {
     session.save();
 }
 
-function next() {
+function sessionNext() {
     var session = ScrollSession.read(sessionStorage.scrollSession);
 
     session.next();
+
+    session.save();
+}
+
+function sessionBack() {
+    var session = ScrollSession.read(sessionStorage.scrollSession);
+
+    session.prev();
 
     session.save();
 }

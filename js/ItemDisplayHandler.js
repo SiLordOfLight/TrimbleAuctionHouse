@@ -18,6 +18,8 @@ request.open('GET', dataLoc+"categorySummary.json");
 request.responseType = 'json';
 request.send();
 
+var catData;
+
 request.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         catData = request.response;

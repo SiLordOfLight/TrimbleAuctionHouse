@@ -19,7 +19,7 @@ class ScrollSession {
     constructor(category,catData) {
         this.category = category;
         this.current_index = 1;
-        this.max_index = catData[category].item_count;
+        this.max_index = catData![category].item_count;
         this.current_image = imagesLoc+category+"_"+1;
     }
 

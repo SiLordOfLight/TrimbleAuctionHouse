@@ -112,3 +112,16 @@ function fetchItemData(){
     }
 }
 
+function setItemData(session) {
+    var request = new XMLHttpRequest();
+    request.open('GET', dataLoc+session.category+"/item-"+session.current_index+".json");
+    request.responseType = 'json';
+    request.send();
+
+    request.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            setupPage(request.response.data,request.response.id);
+        }
+    }
+}
+

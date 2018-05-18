@@ -75,15 +75,20 @@
             <div class="row">
                 <div class="col-lg-3 bubbleFrame">
                     <div class="contentBubble dataBubble">
-                        <p id="dataBox">Item #111 <br>Random Painting <br>Artist: Dorothy Trimble</p>
+                        <p id="dataBox"></p>
 
                         <div class="btn-group itemNav">
                             <button type="button" class="btn btn-primary" id="back"><<<</button>
                             <button type="button" class="btn btn-primary" id="fwd">>>></button>
 
                             <script type="text/javascript">
-                                configBtn('back',function(){sessionBack();});
-                                configBtn('fwd',function(){sessionNext();});
+                                configBtn('back',function(){
+                                    sessionBack();}
+                                );
+                                
+                                configBtn('fwd',function(){
+                                    sessionNext();
+                                });
                             </script>
                         </div>
                     </div>
@@ -91,7 +96,7 @@
 
                 <div class="col-lg-6 bubbleFrame">
                     <div class="contentBubble imgBubble">
-                        <img id="imgBox" src="../data/images/bg_img_1.jpg" alt="File Not Found">
+                        <img id="imgBox" src="#" alt="File Not Found">
                     </div>
                 </div>
 

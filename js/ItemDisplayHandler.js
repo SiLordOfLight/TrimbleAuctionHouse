@@ -33,7 +33,7 @@ class ScrollSession {
         }
     }
     prev(){
-        if (this.current_index > 0) {
+        if (this.current_index > 1) {
             this.current_index -= 1;
             this.current_image = this.current_image.substring(0, this.current_image.length-1) + this.current_index;
         } else {

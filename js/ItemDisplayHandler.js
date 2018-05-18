@@ -84,6 +84,8 @@ function sessionNext() {
     session.save();
 
     setItemData(session);
+
+    document.getElementById('sbmtBtn').disabled = false;
 }
 
 function sessionBack() {
@@ -94,6 +96,8 @@ function sessionBack() {
     session.save();
 
     setItemData(session);
+
+    document.getElementById('sbmtBtn').disabled = false;
 }
 
 function setupPage(data,imgid) {
@@ -129,5 +133,10 @@ function setItemData(session) {
             setupPage(request.response.data,request.response.id);
         }
     }
+}
+
+function handlePostMade() {
+    document.getElementById('inpFld').value = "";
+    document.getElementById('sbmtBtn').disabled = true;
 }
 

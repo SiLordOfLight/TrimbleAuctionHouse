@@ -82,6 +82,8 @@ function sessionNext() {
     session.next();
 
     session.save();
+
+    setItemData(session);
 }
 
 function sessionBack() {
@@ -90,6 +92,8 @@ function sessionBack() {
     session.prev();
 
     session.save();
+
+    setItemData(session);
 }
 
 function setupPage(data,imgid) {

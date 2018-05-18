@@ -8,9 +8,11 @@
         <link rel="stylesheet" href="../css/itemLists.css">
         <link rel="stylesheet" href="../css/titleNav.css">
 
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
         <script src="../js/GetUser.js" charset="utf-8"></script>
         <script src="../js/ButtonConfigure.js" charset="utf-8"></script>
         <script src="../js/ItemDisplayHandler.js" charset="utf-8"></script>
+        <script src="../js/FirebaseInit.js" charset="utf-8"></script>
 
         <script>init("artwork/paintings");</script>
     </head>
@@ -85,7 +87,7 @@
                                 configBtn('back',function(){
                                     sessionBack();}
                                 );
-                                
+
                                 configBtn('fwd',function(){
                                     sessionNext();
                                 });
@@ -106,7 +108,7 @@
                         <h3>Comments:</h3>
                         <textarea id="inpFld" name="Comments"></textarea><br><br>
                         <button type="button" id="sbmtBtn">Make Claim</button>
-                        <script>configBtn("sbmtBtn",function(){handleLogin();});</script>
+                        <script>configBtn("sbmtBtn",function(){writeClaimPost();});</script>
                     </div>
                 </div>
             </div>

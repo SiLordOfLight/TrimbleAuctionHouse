@@ -124,6 +124,7 @@ function setItemData(session) {
 
     request.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+            sessionStorage.setItem('thisItem',JSON.stringify(request.response))
             setupPage(request.response.data,request.response.id);
         }
     }

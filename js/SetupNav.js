@@ -6,7 +6,7 @@ dropdownLinksArray.forEach(function(elem){
 
     elem.onmouseover = function(){
         content.style.display = "block";
-        elem.style.backgroundColor = "rgba(67, 135, 78, 0.9)";
+        elem.style.backgroundColor = "#eac784";
     }
 
     elem.onmouseleave = function(){
@@ -15,7 +15,7 @@ dropdownLinksArray.forEach(function(elem){
     }
 
     content.onmouseover = function(){
-        elem.style.backgroundColor = "rgba(67, 135, 78, 0.9)";
+        elem.style.backgroundColor = "#eac784";
         content.style.display = "block";
     }
 

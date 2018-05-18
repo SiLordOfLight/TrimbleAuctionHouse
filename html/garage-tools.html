@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tools</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/itemLists.css">
+        <link rel="stylesheet" href="../css/titleNav.css">
+
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+        <script src="../js/GetUser.js" charset="utf-8"></script>
+        <script src="../js/ButtonConfigure.js" charset="utf-8"></script>
+        <script src="../js/ItemDisplayHandler.js" charset="utf-8"></script>
+        <script src="../js/FirebaseInit.js" charset="utf-8"></script>
+
+        <script>init("garage/tools");</script>
+    </head>
+    <body>
+        <div class="row" id="titleBar">
+            <div class="col-lg-3 barItem" id="blank"></div>
+
+            <div class="col-lg-6 barItem" id="title">
+                <h1>The Trimble Auction House</h1>
+            </div>
+
+            <div class="col-lg-3 barItem" id="userBubble">
+                <h1 id="userName"></h1>
+                <script type="text/javascript">
+                    configUserBubble();
+                </script>
+            </div>
+        </div>
+
+        <div class="navBar">
+            <a class="navBarItem dropdownLnk" id="cat3" href="#">Garage</a>
+            <a class="navBarItem" href="photos.html">Photos</a>
+            <a class="navBarItem" href="books.html">Books</a>
+            <a class="navBarItem" href="documents.html">Documents</a>
+            <a class="navBarItem" href="jewlery.html">Jewlery</a>
+            <a class="navBarItem" href="art_supplies.html">Art Supplies</a>
+            <a class="navBarItem dropdownLnk" id="cat2" href="#">Household</a>
+            <a class="navBarItem dropdownLnk" id="cat4" href="#">Furniture</a>
+            <a class="navBarItem dropdownLnk" id="cat1" href="#">Artwork</a>
+
+            <div class="dropdown-content" id="cat1-cont" style="margin-left: 1%">
+                <a class="navBarDropItem" href="artwork-paintings.html">Paintings</a>
+                <a class="navBarDropItem" href="artwork-needlepoint.html">Needlepoint</a>
+                <a class="navBarDropItem" href="artwork-textiles.html">Textiles</a>
+                <a class="navBarDropItem" href="artwork-ceramics.html">Ceramics</a>
+                <a class="navBarDropItem" href="artwork-woodwork.html">Woodwork</a>
+                <a class="navBarDropItem" href="artwork-other.html">Other</a>
+            </div>
+
+            <div class="dropdown-content" id="cat2-cont" style="margin-left: 23%">
+                <a class="navBarDropItem" href="household-kitchen.html">Kitchen</a>
+                <a class="navBarDropItem" href="household-linen.html">Linen</a>
+                <a class="navBarDropItem" href="household-treasures.html">Treasures</a>
+            </div>
+
+            <div class="dropdown-content" id="cat3-cont" style="margin-left: 89%">
+                <a class="navBarDropItem" href="garage-keepsakes.html">Keepsakes</a>
+                <a class="navBarDropItem active-item" href="garage-tools.html">Tools</a>
+                <a class="navBarDropItem" href="garage-camping.html">Camping</a>
+                <a class="navBarDropItem" href="garage-car.html">Car & Trailer</a>
+            </div>
+
+            <div class="dropdown-content" id="cat4-cont" style="margin-left: 12%">
+                <a class="navBarDropItem" href="furniture-indoor.html">Indoor</a>
+                <a class="navBarDropItem" href="furniture-outdoor.html">Outdoor</a>
+            </div>
+
+        </div>
+        <script src="../js/SetupNav.js"></script>
+
+        <div class="itemContent">
+            <div class="row">
+                <div class="col-lg-3 bubbleFrame">
+                    <div class="contentBubble dataBubble">
+                        <p id="dataBox"></p>
+
+                        <div class="btn-group itemNav">
+                            <button type="button" class="btn btn-primary" id="back"><<<</button>
+                            <button type="button" class="btn btn-primary" id="fwd">>>></button>
+
+                            <script type="text/javascript">
+                                configBtn('back',function(){
+                                    sessionBack();}
+                                );
+
+                                configBtn('fwd',function(){
+                                    sessionNext();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 bubbleFrame">
+                    <div class="contentBubble imgBubble">
+                        <img id="imgBox" src="#" alt="File Not Found">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 bubbleFrame">
+                    <div class="contentBubble blogBubble">
+                        <h1>Make A Claim:</h1><br>
+                        <h3>Comments:</h3>
+                        <textarea id="inpFld" name="Comments"></textarea><br><br>
+                        <button type="button" id="sbmtBtn">Make Claim</button>
+                        <script>configBtn("sbmtBtn",function(){writeClaimPost();handlePostMade();});</script>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                fetchItemData();
+
+            </script>
+        </div>
+    </body>
+</html>

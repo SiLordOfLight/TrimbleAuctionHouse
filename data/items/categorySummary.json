@@ -1,6 +1,6 @@
 {
     "artwork/paintings" : {
-        "item_count": 4
+        "item_count": 0
     },
     "artwork/ceramics" : {
         "item_count": 0
@@ -15,6 +15,48 @@
         "item_count": 0
     },
     "artwork/other" : {
+        "item_count": 0
+    },
+    "artwork/woodwork" : {
+        "item_count": 0
+    },
+    "art-supplies" : {
+        "item_count": 0
+    },
+    "books" : {
+        "item_count": 0
+    },
+    "documents" : {
+        "item_count": 0
+    },
+    "furniture/indoor" : {
+        "item_count": 0
+    },
+    "furniture/outdoor" : {
+        "item_count": 0
+    },
+    "garage/camping" : {
+        "item_count": 0
+    },
+    "garage/car" : {
+        "item_count": 0
+    },
+    "garage/tools" : {
+        "item_count": 0
+    },
+    "household/kitchen" : {
+        "item_count": 0
+    },
+    "household/linen" : {
+        "item_count": 0
+    },
+    "household/treasures" : {
+        "item_count": 0
+    },
+    "jewlery" : {
+        "item_count": 0
+    },
+    "photos" : {
         "item_count": 0
     }
 }

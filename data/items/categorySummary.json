@@ -1,62 +1,78 @@
 {
     "artwork/paintings" : {
-        "item_count": 0
+        "item_count": 98,
+        "id_prefix": 11
     },
     "artwork/ceramics" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 12
     },
     "artwork/needlepoint" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 13
     },
     "artwork/textiles" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 14
     },
     "artwork/woodwork" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 15
     },
     "artwork/other" : {
-        "item_count": 0
-    },
-    "artwork/woodwork" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 16
     },
     "art-supplies" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 20
     },
     "books" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 30
     },
     "documents" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 40
     },
     "furniture/indoor" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 51
     },
     "furniture/outdoor" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 52
     },
     "garage/camping" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 61
     },
     "garage/car" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 62
     },
     "garage/tools" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 63
     },
     "household/kitchen" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 71
     },
     "household/linen" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 72
     },
     "household/treasures" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 73
     },
     "jewlery" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 80
     },
     "photos" : {
-        "item_count": 0
+        "item_count": 0,
+        "id_prefix": 90
     }
 }

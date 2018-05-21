@@ -66,7 +66,8 @@ function init(category) {
 
     request.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            beginScrollSession(category,request.response[category].item_count)
+            beginScrollSession(category,request.response[category].item_count);
+            sessionStorage.setItem('categoryData',JSON.stringify(request.response));
         }
     }
 }

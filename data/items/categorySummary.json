@@ -28,7 +28,7 @@
         "id_prefix": 20
     },
     "books" : {
-        "item_count": 0,
+        "item_count": 30,
         "id_prefix": 30
     },
     "documents" : {
